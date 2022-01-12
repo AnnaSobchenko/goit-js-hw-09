@@ -91,13 +91,13 @@ function convertMs(ms) {
   const day = hour * 24;
 
   // Remaining days
-  const days = Math.floor(ms / day);
+  const days = String(Math.floor(ms / day)).padStart(2, '0');
   // Remaining hours
-  const hours = Math.floor((ms % day) / hour);
+  const hours = String(Math.floor((ms % day) / hour)).padStart(2, '0');
   // Remaining minutes
-  const minutes = Math.floor(((ms % day) % hour) / minute);
+  const minutes = String(Math.floor(((ms % day) % hour) / minute)).padStart(2, '0');
   // Remaining seconds
-  const seconds = Math.floor((((ms % day) % hour) % minute) / second);
+  const seconds = String(Math.floor((((ms % day) % hour) % minute) / second)).padStart(2, '0');
 
   return { days, hours, minutes, seconds };
 }

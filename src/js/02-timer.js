@@ -63,7 +63,7 @@ const options = {
       startBtn.disabled = false;
     } else {
       startBtn.disabled = true;
-      // Notify.warning('Please choose a date in the future');
+      Notify.warning('Please choose a date in the future');
     }
   },
 };

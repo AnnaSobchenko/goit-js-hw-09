@@ -10,12 +10,24 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  /* text-align: center; */
 }
-
+ul,
+a {
+  text-decoration: none;
+  /* list-style: none; */
+}
 img {
   display: block;
   max-width: 100%;
+}
+
+p a {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12), 5px 5px 2px 0px rgba(0, 0, 0, 0.08),
+    4px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .task_first {
@@ -31,7 +43,8 @@ img {
   background-color: transparent;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12), 5px 5px 2px 0px rgba(0, 0, 0, 0.08),
     4px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
+  border-radius: 5px;
+  outline: none;
   margin-right: 20px;
 }
 
@@ -40,6 +53,7 @@ img {
   justify-content: center;
   padding: 50px;
   background-color: aquamarine;
+  margin-top: 50px;
 }
 
 .field {
@@ -51,4 +65,21 @@ img {
 
 .value {
   font-size: 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 50px 20px;
+  background-color: skyblue;
+}
+
+.form label {
+  margin-right: 50px;
+}
+
+.form button {
+  border-radius: 5px;
+  padding: 5px;
 }

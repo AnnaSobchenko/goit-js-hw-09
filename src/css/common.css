@@ -30,6 +30,13 @@ p a {
     4px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+p {
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+
+.field span {
+}
 .task_first {
   text-align: center;
   margin-top: 300px;
@@ -60,11 +67,16 @@ p a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
 }
 
-.value {
+.field .value {
   font-size: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12), 5px 5px 2px 0px rgba(0, 0, 0, 0.08),
+    4px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .form {
@@ -78,8 +90,17 @@ p a {
 .form label {
   margin-right: 50px;
 }
-
-.form button {
+/* .form  */
+button {
+  min-width: 100px;
   border-radius: 5px;
   padding: 5px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12);
+}
+#datetime-picker {
+  padding: 5px;
+  margin-right: 10px;
+
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12);
 }
